@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="grup-calismasi.css" />
+    <style>
+      /* .about1::first-letter {
+        font-size: 20px;
+        color: red;
+      }
+      .about2::first-line {
+        color: blue;
+        font-weight: bold;
+      }
+      .about3::selection {
+        color: aqua;
+      } */
+      .list li::marker {
+        color: rgb(68, 13, 235);
+      }
+
+      .list li::after {
+        content: "🍅";
+      }
+
+      .list li:nth-child(3n)::after {
+        content: "~";
+      }
+
+      .nvg > ol > li {
+        background-color: red;
+      }
+
+      /* .menü > p  { */
+      /* background-color: brown; */
+      /* } */
+
+      .menü ~ span {
+        background-color: blue;
+      }
+
+      span {
+        display: inline-block;
+      }
+      .box:checked + .menü ~ span {
+        background-color: black;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="nvg">
+      <ol class="list">
+        <li><a href="" title=""> home</a></li>
+        <li><a href="" title="">about</a></li>
+        <li><a href="" title=""> contact</a></li>
+        <li><a href="" title=""> home</a></li>
+        <li><a href="" title="">about</a></li>
+        <li><a href="" title=""> contact</a></li>
+        <ol>
+          <li>Lorem, ipsum dolor.</li>
+          <li>Neque, ratione repellendus!</li>
+          <li>Ipsam, consequuntur quaerat.</li>
+        </ol>
+      </ol>
+    </nav>
+    <input type="checkbox" class="box" />
+    <div class="menü">
+      <p class="about1">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione
+        reiciendis repellat unde ad magnam, voluptatum incidunt aspernatur iste,
+        quae, omnis quidem asperiores! Ab blanditiis saepe earum quod,
+        voluptatem harum cupiditate soluta libero quis, quibusdam animi dicta
+        autem consequatur ipsum reiciendis consectetur vitae eveniet voluptatum
+        repellendus, ducimus laborum aperiam commodi. Ducimus.
+      </p>
+      <div>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+      <p class="about2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta saepe
+        doloribus esse debitis atque exercitationem, eius possimus beatae vero
+        adipisci animi molestias, deleniti libero totam veritatis! Labore
+        repudiandae aspernatur nobis!
+      </p>
+      <p class="about3">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum,
+        officiis repellendus est sed aperiam voluptate labore dolore veniam
+        voluptatem error a quaerat odit, animi totam soluta distinctio? Ducimus
+        obcaecati similique cumque atque. Beatae porro et vel aspernatur fugiat
+        ratione perspiciatis?
+      </p>
+    </div>
+    <span>Lorem ipsum dolor sit.</span>
+    <span> Lorem ipsum dolor sit.</span>
+    <span> div Lorem ipsum dolor sit.</span>
+    <span
+      ><div>karışma</div>
+      Lorem ipsum dolor sit.</span
+    >
+  </body>
+</html>
